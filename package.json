@@ -1,0 +1,48 @@
+{
+  "name": "ngjs-react",
+  "version": "1.0.0",
+  "description": "POC integrating React components into AngularJS",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack -p ./src/angularjsReact.js ./dist/angularjs-react.js --bail",
+    "build:demo": "webpack --config=./demo/webpack.config.js --bail",
+    "start": "webpack-dev-server --config ./demo/webpack.config.js"
+  },
+  "keywords": [
+    "angular",
+    "angularjs",
+    "react",
+    "directive",
+    "component",
+    "transclude"
+  ],
+  "author": "Michael Dennis",
+  "license": "MIT",
+  "devDependencies": {
+    "angular": "1.4.7",
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "css-loader": "^0.28.4",
+    "html-loader": "^0.5.1",
+    "html-webpack-plugin": "^2.29.0",
+    "ng-annotate-loader": "^0.6.1",
+    "node-sass": "^4.5.3",
+    "postcss-cssnext": "^2.9.0",
+    "postcss-each": "^0.9.3",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.2.2",
+    "postcss-mixins": "^5.4.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-toolbox": "v2.0.0-beta.5",
+    "react-grid-layout": "^0.14.7",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1"
+  }
+}
