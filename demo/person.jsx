@@ -3,22 +3,28 @@ import PropTypes from 'prop-types';
 
 class Person extends React.Component {
   static propTypes = {
-    name: PropTypes.string,
-    age: PropTypes.string
+    firstname: PropTypes.string,
+    age: PropTypes.number
   };
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      humor: 'happy'
-    }
-  }
+  static defaultProps = {
+    firstname: 'Mystery',
+    age: -1
+  };
+
   render() {
+    const {
+      firstname,
+      age
+    } = this.props;
     return(
       <div>
-        <h1>{this.props.name}</h1>
+        <h3>Person</h3>
         <p>
-          {this.props.age}
+          FirstName: {firstname}
+        </p>
+        <p>
+          Age: {age}
         </p>
       </div>
     );
