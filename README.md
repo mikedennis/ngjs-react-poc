@@ -1,7 +1,8 @@
 # NGJS-REACT-POC
 
 Based on https://github.com/jeremyhewett/angularjs-react#readme
-* Downgraded Angular to 1.4.7
+* Specifically this PR https://github.com/jeremyhewett/angularjs-react/pull/1 
+* Downgraded Angular to 1.4.7 to match POC scenario
 
 ## How to build and run
 ```

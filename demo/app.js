@@ -4,6 +4,7 @@ import directify from '../src/angularjsReact';
 
 import { Button, IconButton } from 'react-toolbox/lib/button';
 import { DatePicker } from 'react-toolbox/lib/date_picker';
+import { Person } from './person.jsx';
 //import ReactGridLayout from 'react-grid-layout';
 
 const GithubIcon = (
@@ -24,10 +25,15 @@ angular.module('demo', [])
   .directive('reactToolboxIconButton', directify(IconButton))
   .directive('reactToolboxDatePicker', directify(DatePicker))
   .directive('githubIcon', directify(() => GithubIcon))
+  .directive('reactPerson', directify(Person))
  // .directive('reactGridLayout', directify(ReactGridLayout))
   .controller('ButtonCtrl', ($scope) => {
     $scope.text = 'Code';
     $scope.url = 'https://github.com/jeremyhewett/angularjs-react';
+  })
+  .controller('PersonCtrl', ($scope) => {
+    $scope.name = 'Fred';
+    $scope.age = '44';
   })
   .controller('DatePickerCtrl', ($scope) => {
     $scope.data = {

@@ -36,6 +36,7 @@
     "postcss-import": "^9.1.0",
     "postcss-loader": "^1.2.2",
     "postcss-mixins": "^5.4.1",
+    "prop-types": "^15.6.2",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-toolbox": "v2.0.0-beta.5",
